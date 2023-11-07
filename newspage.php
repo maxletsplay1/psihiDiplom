@@ -100,12 +100,14 @@ foreach ($all as $item) {
     $allpg = mysqli_query($db, $quaryPG);
     $allpg = mysqli_fetch_all($allpg);
     foreach ($allpg as $pg);
+    echo ($pg[0]);
     if ($id <= 0) {
-        echo "<script>window.location.href='/news/news?page=1'</script>";
+        echo "<script>window.location.href='/news?page=1'</script>";
         // header('Locstion:/newsco?page=1');
-    } elseif ($id > $pg[0]) {
-        echo "<script>window.location.href='/news/news?page=1'</script>";
     }
+    // elseif ($id > $pg[0]) {
+    //     echo "<script>window.location.href='/news/news?page=1'</script>";
+    // }
     ?>
 
 </html>

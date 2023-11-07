@@ -16,35 +16,31 @@ if (isset($_SESSION['user']['role']) == false) {
 
 
     $name = $_POST["head"];
-    $link = "/news/" . $newid;
+    $link = $newid;
+    $date = date('Y-m-d H:i:s');
+    $name1 = $_POST["head1"];
+    $vst = $_POST["vst"];
+    $text = $_POST["text"];
+
+
+
+
 
     $file = $_FILES['pic'];
     $fileName = time() . $file['name'];
     $path = '../uploads/' . '_' . $fileName;
     move_uploaded_file($file['tmp_name'], $path);
-
-
-    $date = date('Y-m-d H:i:s');
-
-    $queryaddcard = "INSERT INTO `news`(`id`,`date`,`header`,`pic`,`link`) VALUES('$newid', '$date', '$name', '$path', '$link')";
-    $add2 = mysqli_query($db, $queryaddcard);
-
-
-    $name1 = $_POST["head1"];
-    $vst = $_POST["vst"];
-    $text = $_POST["text"];
-
     $file1 = $_FILES['pic1'];
     $fileName1 = time() . $file1['name'];
     $path1 = '../uploads/' . '_' . $fileName1;
     move_uploaded_file($file1['tmp_name'], $path1);
-
     $file2 = $_FILES['pic2'];
     $fileName2 = time() . $file2['name'];
     $path2 = '../uploads/' . '_' . $fileName2;
     move_uploaded_file($file2['tmp_name'], $path2);
 
-
+    $addpost = "INSERT INTO `news`(`id`,`date`,`header`,`pic`,`link`) VALUES('$newid', '$date', '$name', '$path', '$link')";
+    $add = mysqli_query($db, $addpost);
     $queryaddnews = "INSERT INTO `newspage`(`vstavka`, `header`, `text`, `pic1`, `pic2`,`id`) VALUES('$vst','$name1','$text','$path1','$path2','$newid')";
     $add1 = mysqli_query($db, $queryaddnews);
 
