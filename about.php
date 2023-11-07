@@ -15,136 +15,136 @@
     }
 </style>
 
-<body>
-    <?
-    require "header.php"
-    ?>
-    <p class="word-wrap text-center fs-1 mt-4 py-0 text-uppercase">наши сотрудники</p>
-    <div class="container">
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
+
+<?
+require "header.php"
+?>
+<p class="word-wrap text-center fs-1 mt-4 py-0 text-uppercase">наши сотрудники</p>
+<div class="container px-0">
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-        </div>
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-        </div>
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-        </div>
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-        </div>
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-        </div>
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-        </div>
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-        </div>
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-        </div>
-        <div class="card mb-4" style="width: 18rem;">
-            <img src="/media/slide3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Чел</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
     </div>
-    <?
-    require "footer.php"
-    ?>
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+    <div class="card m-4" style="max-width: 540px;">
+        <img src="/media/slide3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Чел</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+</div>
+<?
+require "footer.php"
+?>
 </body>
 
 </html>

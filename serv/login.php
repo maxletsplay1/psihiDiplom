@@ -20,4 +20,3 @@
     } else {
         header("Location:/");
     }
-?>

@@ -1,9 +1,10 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
 </head>
 
 </style>
+
 <body>
     <main>
         <form action="login.php" method="post">
@@ -24,4 +26,5 @@
         </form>
     </main>
 </body>
+
 </html>
