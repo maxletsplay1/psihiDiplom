@@ -95,14 +95,14 @@
                         <a class="nav-link active  mx-2" aria-current="page" href="/contacts">наши филиалы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active  mx-2" aria-current="page" href="#">пресс-служба</a>
+                        <a class="nav-link active  mx-2" aria-current="page" href="/news">пресс-служба</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="flex-grow-1">
+    <main class="flex-grow-1 mx-3">
 
 
         <a href="#" onclick="remove(this)" class="bvi-open badge d-flex flex-column align-items-center justify-content-center rounded-4" style="background-color: #0B87BA;" id="special">
