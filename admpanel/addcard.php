@@ -26,8 +26,8 @@ if (isset($_SESSION['user']['role']) == false) {
 
     $date = date('Y-m-d H:i:s');
 
-    $queryadd0 = "INSERT INTO `news`(`id`,`date`,`header`,`pic`,`link`) VALUES('$newid', '$date', '$name', '$path', '$link')";
-    $add = mysqli_query($db, $queryadd0);
+    $queryaddcard = "INSERT INTO `news`(`id`,`date`,`header`,`pic`,`link`) VALUES('$newid', '$date', '$name', '$path', '$link')";
+    $add2 = mysqli_query($db, $queryaddcard);
 
 
     $name1 = $_POST["head1"];
@@ -45,8 +45,8 @@ if (isset($_SESSION['user']['role']) == false) {
     move_uploaded_file($file2['tmp_name'], $path2);
 
 
-    $queryadd1 = "INSERT INTO `newspage`(`vstavka`, `header`, `text`, `pic1`, `pic2`,`id`) VALUES('$vst','$name1','$text','$path1','$path2','$newid')";
-    $add1 = mysqli_query($db, $queryadd1);
+    $queryaddnews = "INSERT INTO `newspage`(`vstavka`, `header`, `text`, `pic1`, `pic2`,`id`) VALUES('$vst','$name1','$text','$path1','$path2','$newid')";
+    $add1 = mysqli_query($db, $queryaddnews);
 
     header('Location:../admpanel/panel');
 }
