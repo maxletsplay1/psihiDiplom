@@ -36,7 +36,7 @@
     </div>
     <!-- Grid container -->
 
-    <div class="container w-100" id="footer">
+    <div class="container2 w-100" id="footer">
       <footer class=" ">
         <ul class="nav justify-content-center pb-3 mb-0 text-uppercase">
           <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">главная</a></li>

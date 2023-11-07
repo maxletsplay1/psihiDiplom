@@ -21,7 +21,7 @@ require "header.php"
 ?>
 <p class="word-wrap text-center fs-1 mt-4 py-0 text-uppercase">наши сотрудники</p>
 <div class="container px-0">
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>
@@ -33,7 +33,7 @@ require "header.php"
             <li class="list-group-item">A third item</li>
         </ul>
     </div>
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>
@@ -45,7 +45,7 @@ require "header.php"
             <li class="list-group-item">A third item</li>
         </ul>
     </div>
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>
@@ -57,7 +57,7 @@ require "header.php"
             <li class="list-group-item">A third item</li>
         </ul>
     </div>
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>
@@ -69,7 +69,7 @@ require "header.php"
             <li class="list-group-item">A third item</li>
         </ul>
     </div>
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>
@@ -81,7 +81,7 @@ require "header.php"
             <li class="list-group-item">A third item</li>
         </ul>
     </div>
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>
@@ -93,7 +93,7 @@ require "header.php"
             <li class="list-group-item">A third item</li>
         </ul>
     </div>
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>
@@ -105,7 +105,7 @@ require "header.php"
             <li class="list-group-item">A third item</li>
         </ul>
     </div>
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>
@@ -117,7 +117,7 @@ require "header.php"
             <li class="list-group-item">A third item</li>
         </ul>
     </div>
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>
@@ -129,7 +129,7 @@ require "header.php"
             <li class="list-group-item">A third item</li>
         </ul>
     </div>
-    <div class="card m-4" style="max-width: 540px;">
+    <div class="card m-4" style="max-width: 340px;">
         <img src="/media/slide3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Чел</h5>

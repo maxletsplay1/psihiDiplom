@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
 </head>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+</style>
 <?
 require "header.php";
 ?>
@@ -25,33 +33,34 @@ if ($pg[0] <= 0) { ?>
 <? } elseif ($pg[0] > 0) { ?>
 
     <div class="wrapper">
-        <?
-        $page = isset($_GET['page']) ? $_GET['page'] : 1;
-        if ($page <= 0) {
-            echo "<script>window.location.href='/news?page=1'</script>";
-            // header('Locstion:/newsco?page=1');
-        }
-        $limit = 3;
-        $offset = $limit * ($page - 1);
+        <div class="container px-0">
+            <?
+            $page = isset($_GET['page']) ? $_GET['page'] : 1;
+            if ($page <= 0) {
+                echo "<script>window.location.href='/news?page=1'</script>";
+            }
+            $limit = 3;
+            $offset = $limit * ($page - 1);
 
-        require "./serv/db.php";
-        $quaryAll = "SELECT * FROM `news` ORDER BY `id` DESC LIMIT $limit OFFSET $offset";
-        $all = mysqli_query($db, $quaryAll);
-        $all = mysqli_fetch_all($all);
-        foreach ($all as $item) {
-        ?>
-
-            <div class="card">
-                <img src="<?= $item[3] ?>" class="card-img-top" alt="" srcset="">
-                <div class="card-body">
-                    <h5 class="card-title"><?= $item[2] ?></h5>
-                    <p class="card-text"><?= $item[1] ?></p>
-                </div>
-                <a href="/newspage?id=<?= $item[0] ?>" id="but" class="btn btn-primary active" role="button">открыть</a>
-            </div>
-        <?
-        }
-        ?>
+            require "./serv/db.php";
+            $quaryAll = "SELECT * FROM `news` ORDER BY `id` DESC LIMIT $limit OFFSET $offset";
+            $all = mysqli_query($db, $quaryAll);
+            $all = mysqli_fetch_all($all);
+            foreach ($all as $item) {
+            ?>
+                <a href="/newspage?id=<?= $item[0] ?>">
+                    <div class="card m-4" style="max-width: 340px; height:max-content;">
+                        <img src="<?= $item[3] ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $item[2] ?></h5>
+                            <p class="card-text"><?= $item[1] ?></p>
+                        </div>
+                    </div>
+                </a>
+            <?
+            }
+            ?>
+        </div>
     </div>
 
 
@@ -84,8 +93,8 @@ if ($pg[0] <= 0) { ?>
             echo "<script>window.location.href='/news'</script>";
         }
         ?>
-        <a href="/news?page=<?= $page - 1 ?>" class="btn btn-primary <?= $prbtn ?>" id="but" role="button">предыдущая</a>
-        <a href="/news?page=<?= $page + 1 ?>" class="btn btn-primary <?= $nxdbtn ?>" id="but" role="button">следующая</a>
+        <a name="" id="button" class="btn <?= $prbtn ?> fs-4 text-uppercase rounded-start-pill my-4" style="background-color: #0B87BA;" href="/news?page=<?= $page - 1 ?>" role="button">назад</a>
+        <a name="" id="button" class="btn <?= $nxdbtn ?> fs-4 text-uppercase rounded-end-pill my-4" style="background-color: #0B87BA;" href="/news?page=<?= $page + 1 ?>" role="button">далее</a>
     </div>
 
 
