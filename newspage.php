@@ -1,65 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости</title>
-</head>
-<? require "./header.php";
-error_reporting(0)
-?>
-
-<style>
-    .card-img-top {
-        max-width: 600px;
-        max-height: 400px;
-        border: 0;
-        border-radius: 7px;
-    }
-
-    .pic {
-        margin-top: 40px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 40px;
-    }
-
-    #but:hover {
-        color: white;
-        background-color: #12bee0;
-    }
-
-    #but {
-        border-radius: 15px;
-        color: white;
-        background-color: #0D88A1;
-        border: none;
-        margin-bottom: 40px;
-    }
-
-    .da {
-        font-size: 40pt;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .newstext {
-        max-width: 1400px;
-        font-size: 20pt;
-        text-align: justify;
-    }
-
-    .block {
-        min-width: 1400px;
-        max-width: 1900px;
-        margin: auto;
-    }
-</style>
-
 <?
-
 require "./serv/db.php";
 $id = $_GET['id'];
 $quaryAll = "SELECT * FROM `newspage` WHERE `id` = '$id' ";
@@ -68,14 +9,46 @@ $all = mysqli_fetch_all($all);
 foreach ($all as $item) {
 ?>
 
-    <div class="block">
-        <p class="da"><?= $item[1] ?></p>
-        <h5 class="newstext"><?= $item[2] ?></h5>
-        <div class="pic">
-            <img src="<?= $item[3] ?>" class="card-img-top" alt="" srcset="">
-            <img src="<?= $item[4] ?>" class="card-img-top" alt="" srcset="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Новости | <?= $item[1] ?></title>
+    </head>
+    <? require "./header.php";
+    error_reporting(0)
+    ?>
+
+    <style>
+        #carouselExampleIndicators {
+            margin-bottom: 20px;
+        }
+
+        #video {
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+
+    <div class="mw-100">
+        <p class="word-wrap text-center fs-1 mt-4 py-0 text-uppercase"><?= $item[1] ?></p>
+        <p class="word-wrap fs-5 mt-4 w-100 rounded" id="warning"><?= $item[2] ?></p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="<?= $item[3] ?>" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="<?= $item[4] ?>" class="d-block w-100 rounded" alt="...">
+                </div>
+            </div>
         </div>
-        <center>
+        <center class="video" id="video">
             <span>
                 <? echo $item[0]; ?>
             </span>
@@ -88,7 +61,7 @@ foreach ($all as $item) {
 
 }
     ?>
-    <a href="/news.php" id="but" class="btn btn-primary active" role="button">назад</a>
+    <a href="/news.php" class="buttuon fs-4 text-uppercase rounded-pill p-2 my-4 text-decoration-none" style="background-color: #0B87BA; color: white;" role="button" id="button">назад</a>
     </center>
 
     <?
