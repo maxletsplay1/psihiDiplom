@@ -48,7 +48,7 @@ if ($pg[0] <= 0) { ?>
             $all = mysqli_fetch_all($all);
             foreach ($all as $item) {
             ?>
-                <a href="/newspage?id=<?= $item[0] ?>">
+                <a href="/newspage?id=<?= $item[0] ?>" class="text-decoration-none">
                     <div class="card m-4" style="max-width: 340px; height:max-content;">
                         <img src="<?= $item[3] ?>" class="card-img-top" alt="...">
                         <div class="card-body">
