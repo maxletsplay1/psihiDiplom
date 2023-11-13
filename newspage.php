@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <?
 require "./serv/db.php";
 $id = $_GET['id'];
@@ -24,14 +24,28 @@ foreach ($all as $item) {
             margin-bottom: 20px;
         }
 
-        #video {
+        #video,
+        .video,
+        iframe {
             margin-bottom: 20px;
+            max-width: 96vw !important;
+        }
+
+        .container {
+            max-width: 100vw !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #news {
+            max-width: 100vw !important;
         }
     </style>
 
 
 
-    <div class="mw-100">
+    <div class="container" id="news">
         <p class="word-wrap text-center fs-1 mt-4 py-0 text-uppercase"><?= $item[1] ?></p>
         <p class="word-wrap fs-5 mt-4 w-100 rounded" id="warning"><?= $item[2] ?></p>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -48,39 +62,40 @@ foreach ($all as $item) {
                 </div>
             </div>
         </div>
-        <center class="video" id="video">
-            <span>
-                <? echo $item[0]; ?>
-            </span>
-        </center>
+        <div class="video" id="video">
+
+            <? echo $item[0]; ?>
+
+        </div>
     </div>
-    <center>
 
 
-    <?
+
+<?
 
 }
-    ?>
+?>
+<center>
     <a href="/news.php" class="buttuon fs-4 text-uppercase rounded-pill p-2 my-4 text-decoration-none" style="background-color: #0B87BA; color: white;" role="button" id="button">назад</a>
-    </center>
+</center>
 
-    <?
-    require "./footer.php"
-    ?>
-    <?
-    require "./serv/db.php";
-    $quaryPG = "SELECT COUNT(*) FROM `news`";
-    $allpg = mysqli_query($db, $quaryPG);
-    $allpg = mysqli_fetch_all($allpg);
-    foreach ($allpg as $pg);
-    echo ($pg[0]);
-    if ($id <= 0) {
-        echo "<script>window.location.href='/news?page=1'</script>";
-        // header('Locstion:/newsco?page=1');
-    }
-    // elseif ($id > $pg[0]) {
-    //     echo "<script>window.location.href='/news/news?page=1'</script>";
-    // }
-    ?>
+<?
+require "./footer.php"
+?>
+<?
+require "./serv/db.php";
+$quaryPG = "SELECT COUNT(*) FROM `news`";
+$allpg = mysqli_query($db, $quaryPG);
+$allpg = mysqli_fetch_all($allpg);
+foreach ($allpg as $pg);
+echo ($pg[0]);
+if ($id <= 0) {
+    echo "<script>window.location.href='/news?page=1'</script>";
+    // header('Locstion:/newsco?page=1');
+}
+// elseif ($id > $pg[0]) {
+//     echo "<script>window.location.href='/news/news?page=1'</script>";
+// }
+?>
 
 </html>
