@@ -28,8 +28,9 @@ foreach ($all as $item) {
         .video,
         iframe {
             margin-bottom: 20px;
-            max-width: 96vw !important;
+            max-width: 94vw !important;
         }
+
 
         .container {
             max-width: 100vw !important;
@@ -48,24 +49,22 @@ foreach ($all as $item) {
     <div class="container" id="news">
         <p class="word-wrap text-center fs-1 mt-4 py-0 text-uppercase"><?= $item[1] ?></p>
         <p class="word-wrap fs-5 mt-4 w-100 rounded" id="warning"><?= $item[2] ?></p>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide rounded" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="<?= $item[3] ?>" class="d-block w-100 rounded" alt="...">
+                    <img src="<?= $item[3] ?>" class="d-block mw-100 rounded" id="image" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="<?= $item[4] ?>" class="d-block w-100 rounded" alt="...">
+                    <img src="<?= $item[4] ?>" class="d-block mw-100 rounded" id="image" alt="...">
                 </div>
             </div>
         </div>
         <div class="video" id="video">
-
             <? echo $item[0]; ?>
-
         </div>
     </div>
 
