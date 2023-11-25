@@ -21,27 +21,43 @@ require "header.php"
   В выходные дни с 10.00 до 12.00
 </p>
 
-<div id="carouselExampleAutoplaying" class="carousel slide mt-1" data-bs-ride="carousel">
-  <div class="carousel-inner rounded">
-    <div class="carousel-item active">
-      <img src="/media/slide1.jpg" style="min-height: 400px; object-fit: cover;" class="d-block w-100" alt="...">
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="/media/otvet1.jpg" style="min-height: 400px; object-fit: cover;" class="d-block w-100 rounded" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>ответственность</h2>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="/media/zab1.jpg" style="min-height: 400px; object-fit: cover;" class="d-block w-100 rounded" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>забота</h2>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="/media/slide2.jpg" style="min-height: 400px; object-fit: cover;" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="/media/slide3.jpg" style="min-height: 400px; object-fit: cover;" class="d-block w-100" alt="...">
+      <img src="/media/prof1.jpg" style="min-height: 400px; object-fit: cover;" class="d-block w-100 rounded" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>профессионализм</h2>
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
 <p class="word-wrap fs-5 mt-4 w-100 rounded" id="warning">Миссия КГБУЗ «Красноярский краевой психоневрологический диспансер №1» состоит в содействии в улучшении психического здоровья населения Красноярского края, как основы для раскрытия потенциала общества через достижение уровня профилактической, лечебно-диагностической и реабилитационной работы, соответствующей федеральным и региональным стандартам, формирования у сотрудников высоких этических и профессиональных качеств.</p>
 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abf491a49fa686febdd11d4319bc256a926f950d88981df3888b805b7e07d6330&amp;source=constructor" class="mt-1 mb-4 rounded" width="100%" height="400" frameborder="0"></iframe>
 
