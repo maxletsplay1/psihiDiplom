@@ -40,7 +40,7 @@ require "header.php"
                 врач-психиатр высшей категории</p>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Телефон: Телефон: (391) 246-25-98</li>
+            <li class="list-group-item">Телефон: (391) 246-25-98</li>
             <li class="list-group-item">Факс: (391) 246-25-98</li>
             <li class="list-group-item">Е-mail: kkpnd1@kraspsixo.ru</li>
         </ul>
@@ -55,7 +55,7 @@ require "header.php"
                 врач-психиатр высшей категории</p>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Телефон: Телефон: (391) 246-25-98</li>
+            <li class="list-group-item">Телефон: (391) 246-25-98</li>
             <li class="list-group-item">Факс: (391) 246-25-98</li>
             <li class="list-group-item">Е-mail: kkpnd1@kraspsixo.ru</li>
         </ul>
@@ -70,7 +70,7 @@ require "header.php"
                 системе здравоохранения</p>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Телефон: Телефон: (391) 246-25-98</li>
+            <li class="list-group-item">Телефон: (391) 246-25-98</li>
             <li class="list-group-item">Факс: (391) 246-25-98</li>
             <li class="list-group-item">Е-mail: kkpnd1@kraspsixo.ru</li>
         </ul>
@@ -86,7 +86,7 @@ require "header.php"
                 врач-психиатр высшей категории</p>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Телефон: Телефон: (391) 246-25-98</li>
+            <li class="list-group-item">Телефон: (391) 246-25-98</li>
             <li class="list-group-item">Факс: (391) 246-25-98</li>
             <li class="list-group-item">Е-mail: kkpnd1@kraspsixo.ru</li>
         </ul>
@@ -102,7 +102,7 @@ require "header.php"
                 врач-психиатр высшей категории</p>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Телефон: Телефон: (391) 246-25-98</li>
+            <li class="list-group-item">Телефон: (391) 246-25-98</li>
             <li class="list-group-item">Факс: (391) 246-25-98</li>
             <li class="list-group-item">Е-mail: kkpnd1@kraspsixo.ru</li>
         </ul>
@@ -117,7 +117,7 @@ require "header.php"
                 судебно-психиатрической экспертизе</p>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Телефон: Телефон: (391) 246-25-98</li>
+            <li class="list-group-item">Телефон: (391) 246-25-98</li>
             <li class="list-group-item">Факс: (391) 246-25-98</li>
             <li class="list-group-item">Е-mail: kkpnd1@kraspsixo.ru</li>
         </ul>
