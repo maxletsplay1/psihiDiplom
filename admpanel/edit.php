@@ -17,13 +17,17 @@ if (isset($_SESSION['user']['role']) == false) {
         <link rel="stylesheet" href="../css/auth.css">
         <title>админпанель</title>
     </head>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
 
     <body>
-
+        <h1>Редактирование новости</h1>
         <form action="addcard.php" enctype="multipart/form-data" method="post">
             <center>
                 <h1>Содержимое карточки</h1>
-
 
                 <input type="text" name="head" placeholder="заголовок" required>
 
@@ -38,39 +42,12 @@ if (isset($_SESSION['user']['role']) == false) {
                 <input type="file" name="pic1">
                 <input type="file" name="pic2">
                 <br>
-                <input type="submit" name="send">
+                <input type="submit" name="send" value="Сохранить">
             </center>
         </form>
 
-        <form action="delete.php" method="post">
-            <center>
-                <h1>Удаление новостей</h1>
-            </center>
-            <?
-            require "../serv/db.php";
-            $quaryAll = "SELECT * FROM `news` ORDER BY `id`";
-            $all = mysqli_query($db, $quaryAll);
-            $all = mysqli_fetch_all($all);
-            foreach ($all as $item) {
-            ?>
-                <div class="delete" style="border: 2px solid;">
-                    <center>
-                        <h2>Название: <b><?= $item[2] ?></b></h2>
-                        <div class="buttons">
-                            <h3><a href="/admpanel/delete.php?id=<?= $item[0] ?>">удалить</a></h3>
-                            <h3><a class="red" href="/admpanel/edit.php?id=<?= $item[0] ?>">редактировать</a></h3>
-                        </div>
-                    </center>
-                </div>
-                <br>
-            <?
-            }
-            ?>
-        </form>
 
-        <form method="post">
-            <input type="submit" name="test" id="test" value="Выйти" />
-        </form>
+
         <?
         function testfun()
         {

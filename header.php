@@ -82,9 +82,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link active mx-2" aria-current="page" href="/">главная</a>
-                    </li> -->
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active mx-2" aria-current="page" href="/about">о диспансере</a>
                     </li>
