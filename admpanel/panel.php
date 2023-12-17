@@ -29,7 +29,6 @@ if (isset($_SESSION['user']['role']) == false) {
 
                 <input type="file" name="pic" required><br>
                 <h1>Содержимое поста</h1>
-                <input type="text" name="head1" placeholder="заголовок в новости" required>
                 <input type="text" name="vst" placeholder="вставка видео с rutube">
                 <textarea name="text" id="" cols="30" rows="10"></textarea>
 

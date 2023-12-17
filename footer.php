@@ -44,7 +44,7 @@
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">наши филиалы</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">пресс-служба</a></li>
         </ul>
-        <p class="text-center text-muted">© <? $currentDate = date('Y-m-d');
+        <p class="text-center text-muted">© <? $currentDate = date('Y');
                                             echo $currentDate; ?>
           КГБУЗ ККПНД №1</p>
       </footer>

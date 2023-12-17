@@ -49,20 +49,30 @@ foreach ($all as $item) {
     <div class="container" id="news">
         <p class="word-wrap text-center fs-1 mt-4 py-0 text-uppercase"><?= $item[1] ?></p>
         <p class="word-wrap fs-5 mt-4 w-100 rounded" id="warning"><?= $item[2] ?></p>
-        <div id="carouselExampleIndicators" class="carousel slide rounded" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="<?= $item[3] ?>" class="d-block mw-100 rounded" id="image" alt="...">
+        <?php if (!empty($item[3]) || !empty($item[4])) : ?>
+            <div id="carouselExampleIndicators" class="carousel slide rounded" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <?php if (!empty($item[3])) : ?>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <?php endif; ?>
+                    <?php if (!empty($item[4])) : ?>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <?php endif; ?>
                 </div>
-                <div class="carousel-item">
-                    <img src="<?= $item[4] ?>" class="d-block mw-100 rounded" id="image" alt="...">
+                <div class="carousel-inner">
+                    <?php if (!empty($item[3])) : ?>
+                        <div class="carousel-item active">
+                            <img src="<?= $item[3] ?>" class="d-block mw-100 rounded" id="image" alt="...">
+                        </div>
+                    <?php endif; ?>
+                    <?php if (!empty($item[4])) : ?>
+                        <div class="carousel-item<?= empty($item[3]) ? ' active' : '' ?>">
+                            <img src="<?= $item[4] ?>" class="d-block mw-100 rounded" id="image" alt="...">
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
-        </div>
+        <?php endif; ?>
         <div class="video" id="video">
             <? echo $item[0]; ?>
         </div>

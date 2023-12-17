@@ -34,35 +34,40 @@ if ($pg[0] <= 0) { ?>
 
     <div class="wrapper">
         <div class="container px-0">
-            <?
-            $page = isset($_GET['page']) ? $_GET['page'] : 1;
-            if ($page <= 0) {
-                echo "<script>window.location.href='/news?page=1'</script>";
-            }
-            $limit = 3;
-            $offset = $limit * ($page - 1);
+            <div class="container">
+                <div class="row">
+                    <?
+                    $page = isset($_GET['page']) ? $_GET['page'] : 1;
+                    if ($page <= 0) {
+                        echo "<script>window.location.href='/news?page=1'</script>";
+                    }
+                    $limit = 3;
+                    $offset = $limit * ($page - 1);
 
-            require "./serv/db.php";
-            $quaryAll = "SELECT * FROM `news` ORDER BY `id` DESC LIMIT $limit OFFSET $offset";
-            $all = mysqli_query($db, $quaryAll);
-            $all = mysqli_fetch_all($all);
-            foreach ($all as $item) {
-            ?>
-                <a href="/newspage?id=<?= $item[0] ?>" class="text-decoration-none">
-                    <div class="card m-4" style="max-width: 340px; height:max-content;">
-                        <img src="<?= $item[3] ?>" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"><?= $item[2] ?></h5>
-                            <p class="card-text"><?= $item[1] ?></p>
+                    require "./serv/db.php";
+                    $quaryAll = "SELECT * FROM `news` ORDER BY `id` DESC LIMIT $limit OFFSET $offset";
+                    $all = mysqli_query($db, $quaryAll);
+                    $all = mysqli_fetch_all($all);
+                    foreach ($all as $item) {
+                    ?>
+                        <div class="col-md-4">
+                            <a href="/newspage?id=<?= $item[0] ?>" class="text-decoration-none">
+                                <div class="card h-100">
+                                    <img src="<?= $item[3] ?>" class="card-img-top" alt="...">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><?= $item[2] ?></h5>
+                                        <p class="card-text"><?= $item[1] ?></p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                </a>
-            <?
-            }
-            ?>
+                    <?
+                    }
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
-
 
     <div class="pagination">
         <?
