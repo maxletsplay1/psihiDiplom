@@ -22,30 +22,34 @@ if (isset($_SESSION['user']['role']) == false) {
             text-align: center;
         }
     </style>
+    <?
+    require "../serv/db.php";
+    $id = $_GET['id'];
+    $quaryAll = "SELECT * FROM `newspage` WHERE `id` = '$id' ";
+    $all = mysqli_query($db, $quaryAll);
+    $all = mysqli_fetch_all($all);
+    foreach ($all as $item) { ?>
 
-    <body>
-        <h1>Редактирование новости</h1>
-        <form action="addcard.php" enctype="multipart/form-data" method="post">
-            <center>
-                <h1>Содержимое карточки</h1>
-
-                <input type="text" name="head" placeholder="заголовок" required>
-
-                <input type="file" name="pic" required><br>
-                <h1>Содержимое поста</h1>
-                <input type="text" name="head1" placeholder="заголовок в новости" required>
-                <input type="text" name="vst" placeholder="вставка видео с rutube">
-                <textarea name="text" id="" cols="30" rows="10"></textarea>
+        <body>
+            <h1>Редактирование новости</h1>
+            <form action="editcard.php?id=<? echo "$id" ?>" enctype="multipart/form-data" method="post">
+                <center>
+                    <h1>Содержимое новости</h1>
+                    <input type="text" name="head1" placeholder="заголовок в новости" required value="<?= $item[1] ?>">
+                    <input type="text" name="vst" placeholder="вставка видео с rutube " value="<?= $item[0] ?>">
+                    <textarea name="text" id="" cols="30" rows="10"><?= $item[2] ?></textarea>
 
 
 
-                <input type="file" name="pic1">
-                <input type="file" name="pic2">
-                <br>
-                <input type="submit" name="send" value="Сохранить">
-            </center>
-        </form>
-
+                    <input type="file" name="pic1">
+                    <input type="file" name="pic2">
+                    <input type="hidden" name="pic1def" value="<?= $item[3] ?>">
+                    <input type="hidden" name="pic2def" value="<?= $item[4] ?>">
+                    <br>
+                    <input type="submit" name="send" value="Сохранить">
+                </center>
+            </form>
+        <? } ?>
 
 
         <?
@@ -65,6 +69,6 @@ if (isset($_SESSION['user']['role']) == false) {
 }
     ?>
 
-    </body>
+        </body>
 
     </html>
