@@ -39,10 +39,10 @@
       <footer class=" ">
         <ul class="nav justify-content-center pb-3 mb-0 text-uppercase">
           <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">главная</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">о диспансере</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">платные услуги</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">наши филиалы</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">пресс-служба</a></li>
+          <li class="nav-item"><a href="/about.php" class="nav-link px-2 text-muted">о диспансере</a></li>
+          <li class="nav-item"><a href="/paid.php" class="nav-link px-2 text-muted">платные услуги</a></li>
+          <li class="nav-item"><a href="/contacts.php" class="nav-link px-2 text-muted">наши филиалы</a></li>
+          <li class="nav-item"><a href="/news.php" class="nav-link px-2 text-muted">пресс-служба</a></li>
         </ul>
         <p class="text-center text-muted">© <? $currentDate = date('Y');
                                             echo $currentDate; ?>
